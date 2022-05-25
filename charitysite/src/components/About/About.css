@@ -1,0 +1,25 @@
+.aboutUsHeading {
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+}
+.aboutUsHeading h1 {
+    font-size: 65px;
+    padding-top: 5%;
+    padding-bottom: 3%;
+}
+.aboutUsBody p {
+    font-size: 20px;
+    padding: 0% 9%;
+    padding-right: 9%;
+}
+.aboutUsBody img {
+    object-fit: fill;
+    width: 60%;
+    padding-left: 15%;
+}
+@media screen and (max-width: 800px) {
+    .aboutUsBody p {
+        padding-top: 7%;
+    }
+}
+

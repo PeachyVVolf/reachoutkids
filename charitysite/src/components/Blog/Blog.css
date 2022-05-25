@@ -1,0 +1,75 @@
+.blogHeading {
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+}
+.allBlogsLink {
+    text-decoration: none;
+    color: black;
+}
+.allBlogHeading {
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+}
+.allBlogHeading h1 {
+    font-size: 35px !important;
+    padding-top: 5%;
+    padding-bottom: 3%;
+    color: black;
+    text-decoration: none !important;
+}
+.blogHeading h1 {
+    font-size: 65px;
+    padding-top: 5%;
+    padding-bottom: 3%;
+}
+.allBlogBody p {
+    font-size: 18px;
+    padding: 0% 9%;
+    padding-right: 9%;
+    color: black;
+    text-decoration: none;
+    border: none;
+}
+.blogBody p {
+    font-size: 20px;
+    padding: 0% 9%;
+    padding-right: 9%;
+}
+.blogImgContainer {
+    object-fit: cover;
+    height: 550px;
+    display: flex !important;
+    text-align: left !important;
+    justify-content: flex-start !important;
+}
+.blogImgContainer img {
+    width: 110%;
+    object-fit: cover;
+}
+.allBlogImgContainer {
+    object-fit: cover;
+    height: 550px;
+    display: flex !important;
+    text-align: left !important;
+    justify-content: flex-start !important;
+}
+.allBlogImgContainer img {
+    width: 110%;
+    object-fit: cover;
+}
+@media screen and (max-width: 800px) {
+    .blogBody p {
+        padding-top: 7%;
+    }
+    .blogImgContainer img {
+        width: 100%;
+    }    
+    .allBlogBody p {
+        padding-top: 7%;
+    }
+    .allBlogImgContainer img {
+        width: 100%;
+    }
+}
+

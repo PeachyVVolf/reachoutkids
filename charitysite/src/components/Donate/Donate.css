@@ -1,0 +1,71 @@
+.row {
+    justify-content: center;
+    text-align: center;
+}
+.row > h1 {
+    font-size: 90px;
+    font-family: 'Bebas Neue', cursive;
+}
+.paypalRow {
+    z-index: -1000 !important;
+    margin-top: 5%;
+    text-align: center;
+}
+.paypalRow button {
+    background-color: #00a651;
+    color: white;
+    border: none;
+    padding: 2% 5%;
+    margin-left: 0%;
+    transition: all 0.5s;
+}
+.paypalRow button:hover {
+    background-color: #017539;
+}
+.paymentInput {
+    text-align: center;
+    justify-content: center;
+}
+.paymentInput input {
+    width: 18%;
+    padding: 1% 2%;
+    font-size: 23px;
+    text-align: center;
+    border: 2px solid #00a651;
+    border-radius: 3px;
+    margin-bottom: 4%;
+}
+.paymentInput input:focus {
+    border: 2px solid #00a651 !important;
+}
+@media screen and (max-width: 1300px) {
+    .paymentInput input {
+        width: 20%;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .paymentInput input {
+        width: 20%;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .paymentInput input {
+        width: 25%;
+    }
+}
+@media screen and (max-width: 800px) {
+    .paymentInput input {
+        width: 35%;
+    }
+    .paypalRow {
+        margin: 10% 4%;
+    }
+}
+@media screen and (max-width: 600px) {
+    .paymentInput input {
+        width: 40%;
+    }
+    .paypalRow {
+        margin: 10% 4%;
+    }
+}

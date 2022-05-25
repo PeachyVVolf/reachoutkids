@@ -1,0 +1,26 @@
+/* Donate Bar */
+.donateBar {
+    font-family: 'Bebas Neue', cursive;
+    color: black;
+    padding: 3% 8% !important;
+}
+.donateBarInside {
+    background-color: rgb(236, 233, 233);
+    font-size: 30px;
+    padding: 3% 6% !important;
+    letter-spacing: 5px;
+    margin: 0%;
+}
+.donateBarInside button {
+    background-color: #00a651;
+    color: white;
+    border: none;
+    padding: 4% 7%;
+    margin-left: 0%;
+    transition: all 0.5s;
+    font-size: 18px;
+    font-family: 'Bebas Neue', cursive;
+}
+.donateBarInside button:hover {
+    background-color: #017539;
+}

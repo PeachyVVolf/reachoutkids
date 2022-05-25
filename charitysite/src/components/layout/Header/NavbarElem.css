@@ -1,0 +1,252 @@
+.row {
+    width: 100%;
+}
+.topNav {
+    background-color: #00a651;
+}
+.topNav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+.topNav a:hover {
+    color: white;
+}
+.socialIconsTopNav {
+    text-align: right;
+}
+.socialIconsTopNav a:hover {
+    color: aliceblue;
+}
+.navBar {
+    padding: 1.5% 5%;
+    background-color: #21323b;
+}
+.navLinks {
+    text-align: right;
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.navLinks a {  
+    color: white;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+.navLinks  a:hover {
+    color: white;
+    text-decoration: none;
+}
+.menuIcon {
+    display: none;
+}
+.mobileNav {
+    display: none;
+    position: absolute;
+    top: 10%;
+    right: 2%;
+    padding: 0%;
+    z-index: 10000 !important;
+    padding-bottom: 2%;
+    border-radius: 3%;
+}
+.logoContainer {
+    display: inline-flex !important;
+    width: 100% !important;
+    justify-content: center;
+    align-items: center;
+    padding: 0% !important;
+}
+.logoContainer div {
+    padding: 0% !important;
+}
+.logoContainer h1 {
+    font-size: 35px;
+    padding-top: 4%;
+    color: white;
+}
+@media screen and (max-width: 900px) {
+    .menuIcon {
+        display: none;
+    }
+    .logoContainer {
+        display: inline-flex !important;
+        width: 100% !important;
+        justify-content: center;
+        align-items: center;
+        padding: 0% !important;
+    }
+    .logoContainer div {
+        padding: 0% !important;
+    }
+    .logoContainer h1 {
+        font-size: 40px;
+        padding-top: 4%;
+        color: white;
+    }
+    .mobileNav {
+        display: none;
+    }
+    .navLinks {
+        display: inline-flex;
+    }
+}
+@media screen and (max-width: 800px) {
+    .socialIconsTopNav {
+        width: 25px;
+    }
+    .navLinks {
+        display: none;
+    }
+    .logoContainer {
+        display: inline-flex !important;
+        width: 100% !important;
+        justify-content: center;
+        align-items: center;
+        padding: 0% !important;
+    }
+    .logoContainer div {
+        padding: 0% !important;
+    }
+    .logoContainer h1 {
+        font-size: 35px;
+        padding-top: 4%;
+        color: white;
+    }
+    .menuIcon {
+        display: flex;
+        position: absolute;
+        margin-left: 75%;
+        margin-top: 3% !important;
+        justify-content: center;
+        align-items: center;
+        width: 125px;
+        color: white;
+    }
+    .menuIcon svg {
+        width: 3rem !important;
+        height: 3rem !important;
+    }
+    .mobileNav {
+        display: flex;
+        flex-direction: column;
+        margin-left: 50%;
+        text-align: right;
+        width: 50vmax !important;
+        background-color: #21323b;
+    }
+    .mobileNav a {
+        color: white;
+        text-decoration: none;
+        transition: all 0.3s;
+    }
+    .mobileNav a:hover {
+        background-color: white;
+        color: #00a651;
+        border-radius: 4px;
+        font-weight: 600;
+    }
+}
+@media screen and (max-width: 600px) {
+    .navLinks {
+        display: none;
+    }
+    .logoContainer {
+        display: inline-flex !important;
+        width: 100% !important;
+        justify-content: center;
+        align-items: center;
+        padding: 0% !important;
+    }
+    .logoContainer div {
+        padding: 0% !important;
+    }
+    .logoContainer h1 {
+        font-size: 20px;
+        padding-top: 4%;
+        color: white;
+    }
+    .menuIcon {
+        display: flex;
+        position: absolute;
+        margin-left: 80%;
+        margin-top: 3% !important;
+        justify-content: center;
+        align-items: center;
+        width: 125px;
+    }
+    .css-i4bv87-MuiSvgIcon-root {
+        font-size: 3rem !important;
+        color: white;
+    }
+    .mobileNav {
+        display: flex;
+        flex-direction: column;
+        margin-left: 30%;
+        text-align: right;
+        width: 50vmax !important;
+    }
+    .mobileNav a {
+        color: white;
+        text-decoration: none;
+        transition: all 0.3s;
+    }
+    .mobileNav a:hover {
+        background-color: white;
+        color: #00a651;
+        border-radius: 4px;
+        font-weight: 600;
+    }
+}
+@media screen and (max-width: 300px) {
+    .navLinks {
+        display: none;
+    }
+    .logoContainer {
+        display: inline-flex !important;
+        width: 120% !important;
+        justify-content: center;
+        transform: translateX(-40px);
+        align-items: center;
+        padding: 0% !important;
+    }
+    .logoContainer div {
+        padding: 0% !important;
+    }
+    .logoContainer h1 {
+        font-size: 20px;
+        padding-top: 4%;
+        color: white;
+    }
+    .menuIcon {
+        display: flex;
+        position: absolute;
+        margin-left: 80%;
+        margin-top: 3% !important;
+        justify-content: center;
+        align-items: center;
+        width: 125px;
+    }
+    .css-i4bv87-MuiSvgIcon-root {
+        font-size: 3rem !important;
+        color: white;
+    }
+    .mobileNav {
+        display: flex;
+        flex-direction: column;
+        margin-left: 30%;
+        text-align: right;
+        width: 50vmax !important;
+    }
+    .mobileNav a {
+        color: white;
+        text-decoration: none;
+        transition: all 0.3s;
+    }
+    .mobileNav a:hover {
+        background-color: white;
+        color: #00a651;
+        border-radius: 4px;
+        font-weight: 600;
+    }
+}

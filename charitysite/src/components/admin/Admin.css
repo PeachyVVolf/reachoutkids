@@ -1,0 +1,84 @@
+form {
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.addPostImg {
+    object-fit: cover;
+    height: 550px;
+    display: flex !important;
+    text-align: left !important;
+    justify-content: flex-start !important;
+}
+.addPostImg img {
+    width: 100%;
+    object-fit: cover;
+}
+form input {
+    width: 30%;
+    padding: 1% 2%;
+    margin: 1% 0%;
+}
+form button {
+    width: 15%;
+    margin-top: 1%;
+    background-color: #00a651;
+    color: white;
+    transition: all 0.3s;
+    padding: 1%;
+    border: none;
+}
+form button:hover {
+    background-color: #005027;
+    color: white;
+}
+.allSinglepostEdit {
+    text-align: center;
+}
+.allSinglepostIcon {
+    color: #00a651 !important;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.allSinglepostIcon:hover {
+    transform: scale(1.4);
+}
+.allAdmin {
+    text-align: center !important;
+}
+.allAdmin .allPostHeading {
+    color: white;
+    text-decoration: none;
+    background-color: #00a651;
+    padding: 1% 2%;
+    border: none;
+    transition: all 0.3s;
+}
+.allAdmin .allPostHeading:hover {
+    background-color: #005027;
+}
+.writeFormGroup {
+    width: 100%;
+}
+.writeFormGroup input,
+.writeFormGroup textarea {
+    width: 80%;
+}
+.writeFormGroup textarea {
+    height: 250px;
+    margin-left: 0.8%;
+}
+@media screen and (max-width: 600px) {
+    form button {
+        padding: 4% 8%;
+        width: 60%;
+    }
+    form input {
+        width: 65%;
+    }
+    .allAdmin .allPostHeading {
+        padding: 5% 8%;
+    }
+}

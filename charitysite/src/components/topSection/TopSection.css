@@ -1,0 +1,550 @@
+.row {
+    padding: 0%;
+    margin: 0% !important;
+}
+/* Header */
+.topSectionImgWrapper {
+    background-color: black;
+    height: 50vmax;
+    width: 100%;
+    text-align: right;
+    /* clip-path: polygon(45% 0, 100% 0, 100% 100%, 0 100%, 0 80%); */
+}
+.topSectionImg {
+    opacity: 0.5;
+    object-fit: cover;
+    padding: 0% !important;
+    width: 100%;
+    height: 100%;
+}
+.topSectionHeadline {
+    position: absolute;
+    top: 38%;
+    left: 5%;
+    width: 60%;
+}
+.topSectionHeadline > h1 {
+    font-size: 90px;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 1rem;
+}
+.topSectionHeadline > h1 > span {
+    color: #00a651;
+}
+.topSectionHeadline h1 {
+    text-align: left;
+    color: #00a651;
+}
+.topSectionHeadline > button {
+    background-color: #00a651;
+    color: white;
+    border: none;
+    padding: 2% 5%;
+    margin-left: 7%;
+    transition: all 0.5s;
+}
+.topSectionHeadline > button:hover {
+    background-color: #017539;
+}
+@media screen and (max-width: 1100px) {
+    
+    .topSectionImg {
+        object-fit: cover;
+    }
+    .topSectionHeadline {
+        position: absolute;
+        top: 40%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .topSectionHeadline h1 {
+        font-size: 70px;
+        text-align: left;
+        color: #00a651;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .topSectionImgWrapper {
+        background-color: black;
+        height: 100vh;
+        width: 100%;
+        text-align: right;
+    }
+    .topSectionImg {
+        object-fit: fill;
+    }
+    .topSectionHeadline {
+        position: absolute;
+        top: 50%;
+        left: 14%;
+        width: 60%;
+    }
+    .topSectionHeadline h1 {
+        text-align: left;
+    }
+    .topSectionHeadline > button {
+        padding: 5% 7%;
+    }
+}
+@media screen and (max-width: 900px) {
+    .topSectionImgWrapper {
+        background-color: black;
+        height: 100vh;
+        width: 100%;
+        text-align: right;
+    }
+    .topSectionImg {
+        object-fit: cover;
+    }
+    .topSectionHeadline {
+        position: absolute;
+        justify-content: center;
+        top: 50%;
+    }
+    .topSectionHeadline h1 {
+        font-size: 70px;
+        text-align: left;
+        color: #00a651;
+    }
+    .topSectionHeadline > button {
+        padding: 5% 7%;
+    }
+}
+@media screen and (max-width: 800px) {
+    .topSectionImgWrapper {
+        background-color: black;
+        height: 100vh;
+        width: 100%;
+        text-align: right;
+    }
+    .topSectionImg {
+        object-fit: cover;
+    }
+    .topSectionHeadline {
+        position: absolute;
+        top: 40%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .topSectionHeadline h1 {
+        font-size: 60px;
+        color: #00a651;
+        text-align: left;
+    }
+    .topSectionHeadline > button {
+        padding: 5% 7%;
+    }
+}
+@media screen and (max-width: 700px) {
+    .topSectionImgWrapper {
+        background-color: black;
+        height: 100vh;
+        width: 100%;
+        text-align: right;
+    }
+    .topSectionImg {
+        object-fit: cover;
+    }
+    .topSectionHeadline {
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        top: 20%;
+    }
+    .topSectionHeadline h1 {
+        font-size: 55px;
+        padding-top: 4%;
+        color: #00a651;
+        text-align: left;
+    }
+    .topSectionHeadline > button {
+        padding: 5% 7%;
+    }
+}
+@media screen and (max-width: 600px) {
+    .topSectionImgWrapper {
+        background-color: black;
+        height: 100vh;
+        width: 100%;
+        text-align: right;
+    }
+    .topSectionImg {
+        object-fit: cover;
+    }   
+    .topSectionHeadline {
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+        top: 20%;
+    }
+    .topSectionHeadline h1 {
+        font-size: 55px;
+        color: #00a651;
+        text-align: left;
+    }
+    .topSectionHeadline > button {
+        padding: 5% 7%;
+    }
+}
+@media screen and (max-width: 400px) {
+    .topSectionImgWrapper {
+        background-color: black;
+        height: 100vh;
+        width: 100%;
+        text-align: right;
+    }
+    .topSectionImg {
+        object-fit: cover;
+    }   
+    .topSectionHeadline {
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+        top: 20%;
+    }
+    .topSectionHeadline h1 {
+        font-size: 50px;
+        color: #00a651;
+        text-align: left;
+    }
+    .topSectionHeadline > button {
+        padding: 5% 7%;
+    }
+}
+@media screen and (max-width: 300px) {
+    .topSectionImgWrapper {
+        background-color: black;
+        height: 100vh;
+        width: 100%;
+        text-align: right;
+    }
+    .topSectionImg {
+        object-fit: cover;
+    }   
+    .topSectionHeadline {
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+        top: 20%;
+    }
+    .topSectionHeadline h1 {
+        font-size: 30px;
+        color: #00a651;
+        text-align: left;
+    }
+    .topSectionHeadline > button {
+        padding: 5% 7%;
+    }
+}
+
+/* News Bar */
+.newsBar {
+    background-color: #00a651;
+}
+.newsBar a{
+    color: white;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+.newsBar a:hover {
+    font-size: 17px;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+}
+
+/* Our Mission */
+.mission {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 45px;
+    padding: 5%;
+    display: inline-flex;
+    align-items: center;
+}
+.mission h1 {
+    font-family: 'Bebas Neue', cursive;
+}
+.missionLottie {
+    width: 100px;
+    height: 100px;
+    margin-left: -70px;
+    margin-right: 70px;
+}
+.mission p {
+    font-size: 20px;
+    font-weight: 100;
+    font-family: 'Bebas Neue', cursive; 
+}
+@media screen and (max-width: 1300px) {
+    .missionLottie {
+        margin-left: -50px;
+        margin-right: 20px;
+    }
+    .mission p {
+        margin-left: 0%;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .missionLottie {
+        display: none;
+    }
+    .mission p {
+        margin-left: 10% !important;
+    }
+}
+@media screen and (max-width: 800px) {
+    .missionLottie {
+        display: none;
+    }
+    .mission p {
+        margin-left: 10% !important;
+    }
+}
+@media screen and (max-width: 600px) {
+    .missionLottie {
+        display: none;
+    }
+    .mission p {
+        margin-left: 10% !important;
+    }
+}
+
+/* Campaign */
+.campaignHeading {
+    padding-top: 5%;
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+    background-color: #21323b;
+    color: white;
+}
+.campaignHeading h1 {
+    font-size: 55px;
+    font-family: 'Bebas Neue', cursive;
+}
+.campaigns {
+    font-size: 20px;
+}
+@media screen and (max-width: 800px) {
+    .campaigns div {
+        padding-bottom: 10%;
+    }
+    .campaignLottie {
+        padding-bottom: 65%;
+        display: none;
+    }
+}
+@media screen and (max-width: 600px) {
+    .campaigns div {
+        padding-bottom: 10%;
+    }
+    .campaignHeading h1 {
+        text-align: center;
+    }
+    .campaignLottie {
+        padding-bottom: 65%;
+        display: none;
+    }
+}
+
+/* Donate */
+.donate {
+    background-color: black;
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+}
+.donateDiv {
+    background-image: url("../../images/2.jpg");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.5;
+    z-index: 0;
+}
+.donate h1 {
+    font-size: 55px;
+    color: #00a651;
+    z-index: 1;
+    font-family: 'Bebas Neue', cursive;
+    padding-top: 8%;
+    position: absolute;
+}
+.donate h2 {
+    font-size: 55px;
+    color: white;
+    z-index: 1;
+    font-family: 'Bebas Neue', cursive;
+    padding-top: 12%;
+    position: absolute;
+}
+.donate button {
+    position: absolute;
+    background-color: #00a651;
+    color: white;
+    border: none;
+    margin-top: 18%;
+    left: 20%;
+    padding: 2% 3%;
+    width: 15%;
+    margin-left: 7%;
+    transition: all 0.5s;
+}
+.donate button:hover {
+    background-color: #017539;
+}
+@media screen and (max-width: 1200px) {
+    .donate button {
+        margin-top: 30%;
+        width: 20%;
+    }
+    .donate h2 {
+        font-size: 55px;
+        color: white;
+        z-index: 1;
+        font-family: 'Bebas Neue', cursive;
+        padding-top: 22%;
+        position: absolute;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .donate button {
+        margin-top: 40%;
+        width: 30%;
+    }
+    .donate h2 {
+        font-size: 55px;
+        color: white;
+        z-index: 1;
+        font-family: 'Bebas Neue', cursive;
+        padding-top: 25%;
+        position: absolute;
+    }
+}
+@media screen and (max-width: 800px) {
+    .donate button {
+        margin-top: 50%;
+        width: 30%;
+    }  
+    .donate h2 {
+        font-size: 55px;
+        color: white;
+        z-index: 1;
+        font-family: 'Bebas Neue', cursive;
+        padding-top: 32%;
+        position: absolute;
+    }
+}
+@media screen and (max-width: 600px) {
+    .donate button {
+        margin-top: 68%;
+        width: 30%;
+    }
+    
+    .donate h2 {
+        font-size: 55px;
+        color: white;
+        z-index: 1;
+        font-family: 'Bebas Neue', cursive;
+        padding-top: 53%;
+        position: absolute;
+    }
+}
+@media screen and (max-width: 400px) {
+    .donate button {
+        margin-top: 80%;
+        width: 30%;
+    }
+    
+    .donate h1 {
+        font-size: 45px;
+        color: #00a651;
+        z-index: 1;
+        font-family: 'Bebas Neue', cursive;
+        padding-top: 12%;
+        position: absolute;
+    }
+    .donate h2 {
+        font-size: 45px;
+        color: white;
+        z-index: 1;
+        font-family: 'Bebas Neue', cursive;
+        padding-top: 60%;
+        position: absolute;
+    }
+}
+@media screen and (max-width: 300px) {
+    .donate button {
+        margin-top: 125%;
+        width: 30%;
+    }
+    
+    .donate h1 {
+        font-size: 45px;
+        color: #00a651;
+        z-index: 1;
+        font-family: 'Bebas Neue', cursive;
+        padding-top: 12%;
+        position: absolute;
+    }
+    .donate h2 {
+        font-size: 45px;
+        color: white;
+        z-index: 1;
+        font-family: 'Bebas Neue', cursive;
+        padding-top: 85%;
+        position: absolute;
+    }
+}
+
+/* Projects */
+.projects {
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+}
+.projects h1 {
+    font-size: 55px;
+}
+.projectList {
+    font-size: 20px;
+    padding-bottom: 5%;
+    font-family: 'Bebas Neue', cursive;
+}
+@media screen and (max-width: 800px) {
+    .projectList {
+        text-align: left;
+        padding-bottom: 0%;
+    }
+    .projectList div {
+        padding: 2% 10%;
+    }
+}
+
+/* SDG */
+.sdg {
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+}
+.sdg h1 {
+    font-size: 55px;
+}
+.sdgList {
+    padding-top: 3%;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+@media screen and (max-width: 800px) {
+    .sdgList {
+        padding-top: 0%;
+    }
+    .sdg div {
+        padding: 2% 10%;
+    }
+}
+

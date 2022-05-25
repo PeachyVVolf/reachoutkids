@@ -1,0 +1,94 @@
+.footerMain {
+    padding: 2% 3% !important;
+    padding-bottom: 1% !important;
+    background-color: #21323b;
+    color: white;
+    text-align: center;
+}
+.footerMain h3 {
+    font-family: 'Bebas Neue', cursive;
+}
+.footerMain:hover {
+    cursor: default;
+}
+.leftFooter ul,
+.rightFooter ul {
+    list-style: none;
+}
+.midFooter {
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+}
+.rightFooter a {
+    color: white;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+.rightFooter a:hover {
+    color: #00a651;
+    cursor: pointer;
+    text-decoration: none;
+}
+.rightFooter a svg {
+    transition: all 0.5s;
+}
+.rightFooter a:hover svg {
+    color: #00a651;
+}
+.leftFooter ul,
+.rightFooter ul {
+    padding-left: 0% !important;
+}
+@media screen and (max-width: 900px) {
+    
+    
+}
+@media screen and (max-width: 600px) {
+    .leftFooter {
+        padding-top: 5%;
+    }
+    .leftFooter ul,
+    .rightFooter ul {
+        padding-left: 0% !important;
+    }
+    .leftFooter svg,
+    .rightFooter svg {
+        width: 25px;
+    }
+    .rightFooter a:hover svg {
+        color: #00a651;
+    }
+    .rightFooter {
+        padding-top: 12%;
+    }
+    .rightFooter h3,
+    .leftFooter h3 {
+        font-size: 35px;
+    }
+}
+@media screen and (max-width: 300px) {
+    .leftFooter {
+        padding-top: 5%;
+    }
+    .leftFooter ul li {
+        word-wrap: break-word;
+    }
+    .leftFooter ul,
+    .rightFooter ul {
+        padding-left: 0% !important;
+    }
+    .leftFooter svg,
+    .rightFooter svg {
+        width: 25px;
+    }
+    .rightFooter a:hover svg {
+        color: #00a651;
+    }
+    .rightFooter {
+        padding-top: 12%;
+    }
+    .rightFooter h3,
+    .leftFooter h3 {
+        font-size: 45px;
+    }
+}

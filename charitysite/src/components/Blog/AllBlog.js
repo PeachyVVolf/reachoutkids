@@ -23,7 +23,7 @@ const AllBlog = () => {
         <div className='col-12 blogImgContainer'>
         <img src={blogImg} />
         </div>
-        {Array.isArray(posts) && (
+        {posts.length >= 0 ? (
           <Fragment>
             {
               posts.forEach(post => (
@@ -32,6 +32,8 @@ const AllBlog = () => {
               )
             }
           </Fragment>
+        ):(
+          <div><h1>Loading...</h1></div>
         )}
         <DonateBar/>
     </Fragment>

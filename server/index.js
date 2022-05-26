@@ -13,8 +13,9 @@ app.use(express.json());
 
 if (process.env.NODE_ENV === 'production') {
     app.use(express.static('charitysite/build')); // serve the static react app
-    app.get(/^\/(?!api).*/, (req, res) => { // don't serve api routes to react app
-      res.sendFile(path.join(__dirname, './charitysite/build/index.html'));
+    
+    app.get("/*", function (req, res) {
+        res.sendFile(path.join(__dirname, "./charitysite/build/index.html"));
     });
     console.log('Serving React App...');
   };
@@ -43,11 +44,6 @@ app.post("/upload", upload.single("file"), (req,res)=>{
 
 app.use("/post", postRoute);
 app.use("/client", clientRoute);
-
-app.get("/*", function (req, res) {
-    res.sendFile(path.join(__dirname, "./charitysite/build/index.html"));
-  });
-
   
 app.listen(process.env.PORT || 5000, () => {
     

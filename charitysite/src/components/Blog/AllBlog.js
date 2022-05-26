@@ -21,11 +21,11 @@ const AllBlog = () => {
         <div className='col-12 blogImgContainer'>
         <img src={blogImg} />
         </div>
-        {posts.length <= 0 ? (
+        {posts.length <= 0 || posts === undefined ? (
           <div>Loading...</div>
         ):(
           <Fragment>
-            {posts.map(post => (
+            {posts.forEach(post => (
               <Link className='allBlogsLink' to={`/blog/${post._id}`}><Blog post={post} /></Link>
             ))}
           </Fragment>

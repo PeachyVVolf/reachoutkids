@@ -25,7 +25,7 @@ const AddPost = () => {
             }
         }
         try {
-            await axios.post('https://reachoutkids.herokuapp.com/post', newPost);
+            await axios.post('https://reachoutkids.herokuapp.com/post/new', newPost);
         } catch (err) {
             console.log(err)
         }

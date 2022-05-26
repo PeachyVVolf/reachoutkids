@@ -8,8 +8,8 @@ const Admin = () => {
 
     useEffect(() => {
         const changeClient = async () => {
-            const client = await axios.get('/client');
-            setClientId(client.data[0].clientID);
+            const client = await axios.get('https://reachoutkids.herokuapp.com/client');
+            await setClientId(client.data[0].clientID);
         }
         changeClient();
     }, []);

@@ -8,13 +8,13 @@ const Posts = () => {
     const [posts, setPosts] = useState([]);
   
     const deletPost = async (id) => {
-        await axios.delete(`/post/${id}`)
+        await axios.delete(`https://reachoutkids.herokuapp.com/post/${id}`)
     }
 
     useEffect(()=>{
       const fetchPosts = async () => {
-          const res = await axios.get("/post");
-          setPosts(res.data);
+          const res = await axios.get("https://reachoutkids.herokuapp.com/post");
+          await setPosts(res.data);
       };
       fetchPosts();
   },[posts])

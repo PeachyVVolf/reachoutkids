@@ -21,7 +21,7 @@ const AllBlog = () => {
         <div className='col-12 blogImgContainer'>
         <img src={blogImg} />
         </div>
-        {posts === undefined ? (
+        {posts.length >= 0 ? (
           <div>Loading...</div>
         ):(
           <Fragment>

@@ -8,22 +8,25 @@ import DonateBar from '../layout/DonateBar/DonateBar';
 
 const AllBlog = () => {  
     const [posts, setPosts] = useState([]);
+    const [loading, setLoading] = useState([]);
   
     useEffect(()=>{
       const fetchPosts = async () => {
           const res = await axios.get("https://reachoutkids.herokuapp.com/post");
           // console.log(res.data);
-          await setPosts(res.data);
-          console.log(posts.length);
+          while(posts.length <= 0){ 
+            setPosts(res.data);
+            console.log(posts.length);
+          }
       };
       fetchPosts();
-  },[posts])
+  },[])
   return (
     <Fragment>
         <div className='col-12 blogImgContainer'>
         <img src={blogImg} />
         </div>
-        {posts.length >= 0 ? (
+        {posts.length > 0 ? (
           <Fragment>
             {
               posts.forEach(post => (

@@ -19,13 +19,15 @@ const AddPost = () => {
             await data.append("file",file);
             newPost.photo = filename; 
             try {
-                await axios.post('https://reachoutkids.herokuapp.com/upload', data);
+                const ret = await axios.post('https://reachoutkids.herokuapp.com/upload', data);
+                console.log(ret);
             } catch (err) {
                 console.log(err)
             }
         }
         try {
-            await axios.post('https://reachoutkids.herokuapp.com/post', newPost);
+            const ret1 = await axios.post('https://reachoutkids.herokuapp.com/post', newPost);
+            console.log(ret1);
         } catch (err) {
             console.log(err)
         }

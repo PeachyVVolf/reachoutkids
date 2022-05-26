@@ -2,7 +2,7 @@ import React, { Fragment } from 'react';
 import './Blog.css';
 
 const Blog = ({post}) => {
-  const PF = 'https://reach-out-street-kids.herokuapp.com/images/';
+  const PF = 'https://reachoutkids.herokuapp.com/images/';
   return (
     <Fragment>
         <div className='row blog'>

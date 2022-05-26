@@ -5,7 +5,7 @@ import DonateBar from '../layout/DonateBar/DonateBar';
 import axios from 'axios';
 
 const SingleBlog = () => {
-  const PF = 'https://reach-out-street-kids.herokuapp.com/images/';
+  const PF = 'https://reachoutkids.herokuapp.com/images/';
   const location = useLocation();
   const pathId = location.pathname.split('/')[2];
 

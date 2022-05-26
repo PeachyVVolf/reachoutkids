@@ -49,5 +49,5 @@
   "react-dotenv": {
     "whitelist": ["clientId"]
   },
-  "proxy": "https://reach-out-street-kids.herokuapp.com"
+  "proxy": "https://reachoutkids.herokuapp.com/"
 }

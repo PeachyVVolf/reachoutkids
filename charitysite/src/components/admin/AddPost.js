@@ -7,7 +7,8 @@ const AddPost = () => {
     const [title, setTitle] = useState("");
     const [desc, setDesc] = useState("");
     const [file, setFile] = useState(null);
-    const addPostFunc = async () => {
+    const addPostFunc = async (e) => {
+        e.preventDefault();
         const newPost = {
             title,
             desc
@@ -42,7 +43,7 @@ const AddPost = () => {
                             <img src={URL.createObjectURL(file)} />
                         )}
                     </div>
-                    <form className='writeForm' onSubmit={addPostFunc}>
+                    <form className='writeForm' onSubmit={(e)=>addPostFunc}>
                         <div className='writeFormGroup'>
                             <label htmlFor='fileInput'>
                                 <i className="writeIcon fa-solid fa-plus"></i>

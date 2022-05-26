@@ -12,6 +12,7 @@ app.use(cors());
 
 dotenv.config();
 app.use(express.json());
+app.options('*', cors());
 
 app.use("/images", express.static(path.join(__dirname, "/images")));
 

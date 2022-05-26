@@ -7,16 +7,16 @@ const AddPost = () => {
     const [title, setTitle] = useState("");
     const [desc, setDesc] = useState("");
     const [file, setFile] = useState(null);
-    const addPost = async () => {
+    const addPostFunc = async () => {
         const newPost = {
             title,
             desc
         }
         if(file) {
-            const data = new FormData();
-            const filename = Date.now()+file.name;
-            data.append("name",filename);
-            data.append("file",file);
+            const data = await new FormData();
+            const filename = await Date.now()+file.name;
+            await data.append("name",filename);
+            await data.append("file",file);
             newPost.photo = filename; 
             try {
                 await axios.post('https://reachoutkids.herokuapp.com/upload', data);
@@ -40,7 +40,7 @@ const AddPost = () => {
                             <img src={URL.createObjectURL(file)} />
                         )}
                     </div>
-                    <form className='writeForm' onSubmit={addPost}>
+                    <form className='writeForm' onSubmit={addPostFunc}>
                         <div className='writeFormGroup'>
                             <label htmlFor='fileInput'>
                                 <i className="writeIcon fa-solid fa-plus"></i>

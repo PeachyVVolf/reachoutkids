@@ -5,8 +5,10 @@ const postRoute = require('./routes/posts');
 const clientRoute = require('./routes/client');
 const multer = require('multer');
 const path = require('path');
+var cors = require('cors');
 
 const app = express();
+app.use(cors());
 
 dotenv.config();
 app.use(express.json());

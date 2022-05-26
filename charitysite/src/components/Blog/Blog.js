@@ -5,6 +5,7 @@ const Blog = ({post}) => {
   const PF = 'https://reachoutkids.herokuapp.com/images/';
   return (
     <Fragment>
+      {console.log(post)}
         <div className='row blog'>
             <div className='row allBlogHeading'>
                 <h1>{post.title}</h1>

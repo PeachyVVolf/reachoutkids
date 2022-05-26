@@ -13,7 +13,7 @@ const Paypal = () => {
 
     useEffect(() => {
         const setID = async () => {
-            const data = await axios.get('/client');
+            const data = await axios.get('https://reachoutkids.herokuapp.com/client');
             setClientId(data.data[0].clientID)
         }
         setID();

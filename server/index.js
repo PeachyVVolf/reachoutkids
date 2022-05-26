@@ -11,15 +11,6 @@ const app = express();
 dotenv.config();
 app.use(express.json());
 
-if (process.env.NODE_ENV === 'production') {
-    app.use(express.static('charitysite/build')); // serve the static react app
-    
-    app.get("/*", function (req, res) {
-        res.sendFile(path.join(__dirname, "./charitysite/build/index.html"));
-    });
-    console.log('Serving React App...');
-  };
-
 app.use("/images", express.static(path.join(__dirname, "/images")));
 
 mongoose.connect(process.env.MONGODB_URI || "mongodb+srv://reachadmin:ZuLuMAN5386@cluster0.az4wji1.mongodb.net/ReachOutKids?retryWrites=true&w=majority", {

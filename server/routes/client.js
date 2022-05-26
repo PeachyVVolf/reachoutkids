@@ -8,6 +8,7 @@ router.put('/', async (req, res, next) => {
         const newClient = await Client.findOneAndUpdate(client[0], {
             $set: req.body
         }, {new:true})
+        res.header("Access-Control-Allow-Origin", "*");
         res.status(200).json(newClient);
     } catch (err) {
         res.status(500).json(err);
@@ -20,6 +21,7 @@ router.get('/', async(req,res,next)=>{
     {
         let posts;
         posts = await Client.find();
+        res.header("Access-Control-Allow-Origin", "*");
         res.status(200).json(posts);
     } catch (err) {
         res.status(500).json(err);

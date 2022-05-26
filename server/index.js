@@ -29,6 +29,7 @@ const storage = multer.diskStorage({
 
 const upload = multer({storage:storage});
 app.post("/upload", upload.single("file"), (req,res)=>{
+    res.header("Access-Control-Allow-Origin", "*");
     res.status(200).json("File Uploaded");
 });
 

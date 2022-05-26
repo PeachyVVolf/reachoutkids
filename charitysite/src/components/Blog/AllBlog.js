@@ -29,7 +29,7 @@ const AllBlog = () => {
         {posts.length > 0 ? (
           <Fragment>
             {
-              posts.forEach(post => (
+              posts.map(post => (
                 <Link className='allBlogsLink' to={`/blog/${post._id}`}><Blog post={post} /></Link>
                 )
               )

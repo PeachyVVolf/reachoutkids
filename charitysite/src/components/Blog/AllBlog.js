@@ -21,9 +21,15 @@ const AllBlog = () => {
         <div className='col-12 blogImgContainer'>
         <img src={blogImg} />
         </div>
-        {posts.map(post => (
-            <Link className='allBlogsLink' to={`/blog/${post._id}`}><Blog post={post} /></Link>
-        ))}
+        {posts === undefined ? (
+          <div>Loading...</div>
+        ):(
+          <Fragment>
+            {posts.map(post => (
+              <Link className='allBlogsLink' to={`/blog/${post._id}`}><Blog post={post} /></Link>
+            ))}
+          </Fragment>
+        )}
         <DonateBar/>
     </Fragment>
   )

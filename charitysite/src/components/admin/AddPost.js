@@ -43,7 +43,7 @@ const AddPost = () => {
                             <img src={URL.createObjectURL(file)} />
                         )}
                     </div>
-                    <form className='writeForm' onSubmit={(e)=>addPostFunc}>
+                    <form className='writeForm' onSubmit={addPostFunc}>
                         <div className='writeFormGroup'>
                             <label htmlFor='fileInput'>
                                 <i className="writeIcon fa-solid fa-plus"></i>

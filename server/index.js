@@ -35,7 +35,8 @@ app.post("/upload", upload.single("file"), (req,res)=>{
 app.use("/post", postRoute);
 app.use("/client", clientRoute);
 
-
+app.get('/', (req, res) => { res.send('Hello from Express!')})
 app.listen(process.env.PORT || 5000, () => {
+    
     console.log("Backend is running");
 });

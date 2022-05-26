@@ -11,7 +11,7 @@ const AllBlog = () => {
   
     useEffect(()=>{
       const fetchPosts = async () => {
-          const res = await axios.get("https://reachoutkids.herokuapp.com/post");
+          const res = await axios.get("/post");
           setPosts(res.data);
       };
       fetchPosts();

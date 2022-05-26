@@ -14,6 +14,7 @@ const AllBlog = () => {
           const res = await axios.get("/post");
           setPosts(res.data);
           console.log(res.data);
+          console.log(posts)
       };
       fetchPosts();
   },[])

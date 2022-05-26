@@ -13,6 +13,7 @@ const AllBlog = () => {
       const fetchPosts = async () => {
           const res = await axios.get("/post");
           setPosts(res.data);
+          console.log(res.data);
       };
       fetchPosts();
   },[])

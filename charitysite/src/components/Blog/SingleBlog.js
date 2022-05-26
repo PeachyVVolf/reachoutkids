@@ -13,8 +13,8 @@ const SingleBlog = () => {
 
   useEffect(()=>{
       const getPost = async () => {
-          const res = await axios.get(`/post/${pathId}`);
-          setData(res.data);
+          const res = await axios.get(`https://reachoutkids.herokuapp.com/post/${pathId}`);
+          await setData(res.data);
       }
       getPost();
   },[pathId])

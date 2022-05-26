@@ -10,7 +10,7 @@ const app = express();
 
 dotenv.config();
 app.use(express.json());
-
+app.use('*', express.static(path.join(__dirname, "charitysite", "build")))
 app.use("/images", express.static(path.join(__dirname, "/images")));
 
 mongoose.connect(process.env.MONGODB_URI || "mongodb+srv://reachadmin:ZuLuMAN5386@cluster0.az4wji1.mongodb.net/ReachOutKids?retryWrites=true&w=majority", {

@@ -33,7 +33,7 @@ const AllBlog = () => {
             }
           </Fragment>
         ):(
-          <div><h1>Loading...</h1></div>
+          <div><h1>No Posts</h1></div>
         )}
         <DonateBar/>
     </Fragment>

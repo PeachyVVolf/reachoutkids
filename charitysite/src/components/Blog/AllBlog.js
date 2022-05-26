@@ -14,7 +14,7 @@ const AllBlog = () => {
           const res = await axios.get("https://reachoutkids.herokuapp.com/post");
           // console.log(res.data);
           setPosts(res.data);
-          console.log(posts);
+          console.log(posts.length);
       };
       fetchPosts();
   },[posts])

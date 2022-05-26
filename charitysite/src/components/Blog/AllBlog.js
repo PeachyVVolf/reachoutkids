@@ -21,13 +21,14 @@ const AllBlog = () => {
         <div className='col-12 blogImgContainer'>
         <img src={blogImg} />
         </div>
-        {Array.isArray(posts) ? (
-          <div>Loading...</div>
-        ):(
+        {Array.isArray(posts) && (
           <Fragment>
-            {posts.forEach(post => (
-              <Link className='allBlogsLink' to={`/blog/${post._id}`}><Blog post={post} /></Link>
-            ))}
+            {
+              posts.forEach(post => (
+                <Link className='allBlogsLink' to={`/blog/${post._id}`}><Blog post={post} /></Link>
+                )
+              )
+            }
           </Fragment>
         )}
         <DonateBar/>

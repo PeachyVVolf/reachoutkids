@@ -13,7 +13,7 @@ app.use(express.json());
 
 app.use("/images", express.static(path.join(__dirname, "/images")));
 
-mongoose.connect(process.env.MONGO_URL || "mongodb+srv://reachadmin:ZuLuMAN5386@cluster0.az4wji1.mongodb.net/ReachOutKids?retryWrites=true&w=majority", {
+mongoose.connect(process.env.MONGO_URL, {
     useNewUrlParser: true,
     useUnifiedTopology: true
 }).then(console.log("Mongo DB Connected")).catch(err=>console.log(err));

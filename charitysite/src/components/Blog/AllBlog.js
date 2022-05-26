@@ -17,7 +17,7 @@ const AllBlog = () => {
           console.log(posts);
       };
       fetchPosts();
-  },[])
+  },[posts])
   return (
     <Fragment>
         <div className='col-12 blogImgContainer'>
